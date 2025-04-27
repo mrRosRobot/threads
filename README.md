@@ -95,12 +95,3 @@ asyncio.run(main())
 **Задание 4.**  
 Добавьте в `main()` после `gather` строку `print("Done")` и проверьте, что она выводится после слов «Hello» и «World».
 
-<details>
-<summary>Решение</summary>
-
-```python
-async def main():
-    await asyncio.gather(hello(), world())
-    print("Done")  # здесь
-```
-</details>
